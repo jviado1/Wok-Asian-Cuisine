@@ -6,52 +6,60 @@
     <meta name="description" content="This is the home/ index page for my final project for GIT 215: Wok Asian Cuisine.">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="favico.ico" type="image/x-icon">
-    <title>Wok Asian Cuisine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Montserrat&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Home - Wok Asian Cuisine</title>
 </head>
 <body>
-    <header>
-        <h1>Wok Asian Cuisine</h1>
-            <nav>
-                <ul>
-                    <li><a href="#" target="_blank">Home</a></li>
-                    <li><a href="#" target="_blank">Our Menu</a></li>
-                    <li><a href="#" target="_blank">Order Now</a></li>
-                    <li><a href="contact.html" target="_blank">Contact Us</a></li>
-                </ul>
-            </nav>
-    </header>
+    <div id="wrapper">
+        <header>
+            <h1><a href="#">Wok Asian Cuisine</a></h1>
+                <nav>
+                    <ul>
+                        <li><a  class="active" href="#">Home</a></li>
+                        <li><a href="#" target="_blank">Our Menu</a></li>
+                        <li><a href="#" target="_blank">Order Now</a></li>
+                        <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                    </ul>
+                </nav>
+        </header>
 
-    <main>
-        <section class="hero">
-            <img src="home-option-1/header-img.png" alt="A photo of dim sum on a small plate.">
-            <h2>Modern Fusion Bar & Kitchen</h2>
-            <a href="menu.html" target="_blank">Our Menu</a>
-        </section>
-
-        <section>
-            <h3>Cater With Us</h3>
-            <p>We cater weddings, business lunches, dinners, and more.<br>Call us to discuss how we can be a part of your next event.</p>
-        </section>
-
-        <div>
+        <main>
             <section>
-                <img src="home-option-1/local.jpg" alt="Three dim sum plates, two wasabi ramekins, and a black teapot.">
-                <h3>Local Cuisine</h3>
-                <p>We refuse to compromise on quality. Our fresh ingredients are local and we are committed to serving fresh cuisine.</p>
+                <img class="hero" src="home-option-1/header-img.png" alt="A photo of several white teacups on a wooden table.">
+                <div class="card-footer">
+                    <h2>Modern Fusion Bar & Kitchen</h2>
+                    <a href="menu.html" target="_blank">Our Menu</a>
+                </div>
+                
             </section>
-            
-            <section>
-                <img src="home-option-1/chef.jpg" alt="A chef wearing gloves, garnishing two bowls of ramen.">
-                <h3>Chef Ly</h3>
-                <p>With 20 years of experience cooking in the finest restaurants, Chef Ly is committed to serving fresh food and unique experiences.</p>
+
+            <section class="cater">
+                <h3>Cater With Us</h3>
+                <p>We cater weddings, business lunches, dinners, and more.<br>Call us to discuss how we can be a part of your next event.</p>
             </section>
-        </div>
-    </main>
 
-    <footer>
-        <p>&copy; Joab Viado 2023</p>
-    </footer>
-
-
+            <div class="grid-container">
+                <section class="grid-item">
+                    <img src="home-option-1/local.jpg" alt="Three dim sum plates, two wasabi ramekins, and a black teapot.">
+                    <h3>Local Cuisine</h3>
+                    <p>We refuse to compromise on quality. Our fresh ingredients are local and we are committed to serving fresh cuisine.</p>
+                </section>
+                
+                <section class="grid-item">
+                    <img src="home-option-1/chef.jpg" alt="A chef wearing gloves, garnishing two bowls of ramen.">
+                    <h3>Chef Ly</h3>
+                    <p>With 20 years of experience cooking in the finest restaurants, Chef Ly is committed to serving fresh food and unique experiences.</p>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>Wok Asian Cuisine</p>
+            <p>Copyright © 2023 Wok - All Rights Reserved.</p>
+            <p>This site is for educational purposes only.</p>
+        </footer>
+    </div>
 </body>
 </html>
